@@ -2,6 +2,8 @@
 
 代码实现：
 
+- javascripts:
+
 ```bash
 const prime = (num)=>{
     if(num<2)return false;
@@ -11,3 +13,17 @@ const prime = (num)=>{
     return true;
 }
 ```
+
+- java
+
+```java
+public static boolean isPrime(int N){
+    if(N<2) return false;
+    for(int i = 2; i*i<=N;i++){
+        if(N%i==0)return false;
+    }
+    return true;
+}
+
+```
+
