@@ -293,14 +293,19 @@ const printLog = console.log;
 // graph.showGraph();
 // graph.dfs(3)
 /***********************************************/
-import {createRandomCount} from './sort/util'
-import BubbleSort from "./sort/bubble";
-import selectionSort from "./sort/selection"
-import binSearch from "./sort/binSearch";
-import insertionSort from "./sort/insertion"
-let arr = createRandomCount(10);
-console.log(arr.join(' '));
-let arr1 = insertionSort(arr);
-console.log(arr1.join(' '));
-let a = binSearch(arr1, 3);
-console.log('a', a);
+// import {createRandomCount} from './sort/util'
+// import BubbleSort from "./sort/bubble";
+// import selectionSort from "./sort/selection"
+// import binSearch from "./sort/binSearch";
+// import insertionSort from "./sort/insertion"
+// let arr = createRandomCount(10);
+// console.log(arr.join(' '));
+// let arr1 = insertionSort(arr);
+// console.log(arr1.join(' '));
+// let a = binSearch(arr1, 3);
+// console.log('a', a);
+/***********************************************/
+import recurFib from "./sort/recurFib";
+import dynFib from "./sort/dynFib";
+console.log(recurFib(5));
+console.log(dynFib(5));
