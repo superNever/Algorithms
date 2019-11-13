@@ -270,17 +270,6 @@ const printLog = console.log;
 // bst.insert(12);
 // bst.insert(22);
 // bst.insert(32);
-// bst.insert(12);
-// bst.insert(22);
-// bst.insert(54);
-// bst.insert(16);
-// bst.insert(16);
-// bst.isOrder();
-// console.log('中序: ',bst.putstr());
-//
-// bst.preOrder();
-// console.log('先序: ',bst.putstr());
-//
 // bst.postOrder();
 // console.log('后序: ', bst.putstr());
 //
@@ -293,4 +282,22 @@ const printLog = console.log;
 //
 // console.log(bst);
 
-/******************************************/
+/*******************Graph***********************/
+// import {Graph} from "./graph";
+// let graph = new Graph(5);
+// graph.addEdge(3,4);
+// graph.addEdge(1,2);
+// graph.addEdge(2,4);
+// graph.addEdge(1,4);
+// graph.addEdge(3,1);
+// graph.showGraph();
+// graph.dfs(3)
+/***********************************************/
+import {createRandomCount} from './sort/util'
+import BubbleSort from "./sort/bubble";
+import selectionSort from "./sort/selection"
+import insertionSort from "./sort/insertion"
+let arr = createRandomCount(10);
+console.log(arr.join(' '));
+let arr1 = insertionSort(arr);
+console.log(arr1.join(' '));
