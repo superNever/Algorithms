@@ -8,7 +8,7 @@ const randomData = nums => {
     let num = Math.floor(nums);
     let arr = new Array(num);
     for (let i =0; i< num; i++) {
-        arr.push(Math.floor(Math.random()*(num + 1)));
+        arr[i] = (Math.floor(Math.random()*(num + 1)));
     }
     return arr;
 };
